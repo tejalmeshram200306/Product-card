@@ -1,67 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Document</title>
+    <title>Coffee Shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Moderustic:wght@300..800&display=swap" rel="stylesheet">
     <style>
-        .product-card{
-            background-color: #F8EDE3;
-            width: 180px;
-            padding:10px 5px;
-            border-radius: 10px;
-            border: 2px solid #ff9933;
+        body {
+            font-family: "Moderustic", sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #F3E5AB; 
+        }
+
+        .header {
+            background-color: #6F4E37; 
+            color: #FFFFFF; 
+            text-align: center;
+            padding: 20px 0;
+            box-shadow: 0 4px 8px #B3A299; 
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .product-card {
+            background-color: #F8EDE3; 
+            width: 300px;
+            padding: 20px;
             margin: 20px;
-
-        }
-        .product-img{
-            width: 150px;
-            display: block;
-            margin:10px auto;
             border-radius: 10px;
-
+            box-shadow: 0 4px 8px #B3A299; 
+            transition: 0.3s;
         }
-        .btn-add-to-cart{
-            background-color: #C5705D;
-            padding: 5px 20px;border-radius: 30px;
+
+        .product-card:hover {
+            box-shadow: 0 8px 16px #B3A299; 
+            transform: translateY(-10px);
+        }
+
+        .product-img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .product-card p {
+            margin: 10px 0;
+        }
+
+        .btn {
+            background-color: #C5705D; 
+            color: #FFFFFF; 
+            padding: 10px 20px;
+            border-radius: 20px;
             border: none;
             display: block;
-            margin:10px auto;
+            margin: 10px auto;
+            text-align: center;
+            text-decoration: none;
+            transition: 0.3s;
         }
-        .container{
-           align-items: center;
-           justify-content: space-between;
 
-
+        .btn:hover {
+            background-color: #A35648; 
         }
+
     </style>
 </head>
 <body>
+    <div class="header">
+        <h1>Welcome to Java Coffee</h1>
+        <p>Your favorite spot for fresh brews and cozy vibes!</p>
+    </div>
+
     <div class="container">
-    <div class="product-card">
-        <img src="https://assets.ajio.com/medias/sys_master/root/20240406/jTor/6610dc8616fd2c6e6aa17c06/-473Wx593H-466855053-yellow-MODEL.jpg" class="product-img">
+        <div class="product-card">
+            <img src="https://cdn.shopify.com/s/files/1/0366/8780/6508/files/what_you_need_to_make_a_espresso_Coffee_2048x2048.jpg?v=1657807940" class="product-img" alt="Coffee Cup">
+            <p><b>Espresso</b></p>
+            <p><b>Price:</b> ₹299</p>
+            <a href="#" class="btn">Order Now</a>
+        </div>
+        <div class="product-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoykv38ImcTRcWRpXSbJf-NvFNH-dJhRjiCQ&s" class="product-img">
+            <p><b>Iced Coffee</b></p>
+            <p><b>Price:</b> ₹449</p>
+            <a href="#" class="btn">Order Now</a>
+        </div>
+        <div class="product-card">
+            <img src="https://insanelygoodrecipes.com/wp-content/uploads/2023/06/Cappuccino-Coffee-in-a-White-Cup.jpg" class="product-img" alt="Cappuccino">
+            <p><b>Cappuccino</b></p>
+            <p><b>Price:</b> ₹599</p>
+            <a href="#" class="btn">Order Now</a>
+        </div>
 
-        <p>
-           Floral dress
-        </p>
-        <p>
-            <b>Price:</b>2499
-        </p>
-        <button class="btn-add-to-cart">
-            Add to card
-        </button>
-    </div>
-    <div class="product-card">
-        <img src="https://www.thisisourbliss.com/wp-content/uploads/2021/05/ThisIsOurBliss-April2021-84-683x1024.jpg" class="product-img">
+        <div class="product-card">
+            <img src="https://media.istockphoto.com/id/505168330/photo/cup-of-cafe-latte-with-coffee-beans-and-cinnamon-sticks.jpg?s=612x612&w=0&k=20&c=h7v8kAfWOpRapv6hrDwmmB54DqrGQWxlhP_mTeqTQPA=" class="product-img" alt="Cappuccino">
+            <p><b>Latte</b></p>
+            <p><b>Price:</b> ₹596</p>
+            <a href="#" class="btn">Order Now</a>
+        </div>   
 
-        <p>
-           Casual dress for summer
-        </p>
-        <p>
-            <b>Price:</b>4999
-        </p>
-        <button class="btn-add-to-cart">
-            Add to card
-        </button>
-    </div>
-</div>
 </body>
 </html>
